@@ -1,0 +1,11 @@
+{
+  "name": "matrix-ng6-library",
+  "version": "1.1.0",
+  "description": "An Angular library application for the MATRIX Res AppDev team",
+  "author": "MATRIX Res",
+  "homepage": "http://matrixres.com",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  }
+}

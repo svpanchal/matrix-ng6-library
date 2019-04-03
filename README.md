@@ -1,5 +1,6 @@
 # MatrixLibApp
 
+This is the MATRIX Angular 6 library project; it will hold any common code meant to be shared across projects built with Angular.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
 
 ## Development server

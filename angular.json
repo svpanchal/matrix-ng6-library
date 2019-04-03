@@ -121,6 +121,41 @@
           }
         }
       }
+    },
+    "matrix-ng6-library": {
+      "root": "projects/matrix-ng6-library",
+      "sourceRoot": "projects/matrix-ng6-library/src",
+      "projectType": "library",
+      "prefix": "enl",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/matrix-ng6-library/tsconfig.lib.json",
+            "project": "projects/matrix-ng6-library/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/matrix-ng6-library/src/test.ts",
+            "tsConfig": "projects/matrix-ng6-library/tsconfig.spec.json",
+            "karmaConfig": "projects/matrix-ng6-library/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/matrix-ng6-library/tsconfig.lib.json",
+              "projects/matrix-ng6-library/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "matrix-lib-app"
